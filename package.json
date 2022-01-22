@@ -1,6 +1,5 @@
 {
   "name": "node-midi-test",
-  "main": "index.js",
   "scripts": {
     "start": "sucrase-node src/index.ts | bunyan",
     "dev": "nodemon src/index.ts | bunyan"
