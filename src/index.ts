@@ -16,7 +16,7 @@ inputDevices.forEach(deviceName => {
     logger.info({ deviceName }, "Found MIDI input")
     let inputDevice = new easymidi.Input(deviceName)
     inputDevice.on('cc', function (data) {
-        logger.info(
+        logger.debug(
             {
                 ...data,
                 controller: deviceName,
